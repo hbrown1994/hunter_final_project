@@ -18,7 +18,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: row;
-  cursor: pointer;
+  cursor: crosshair;
   transition-property: clip-path;
   transition-duration: 10ms;
 }

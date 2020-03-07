@@ -1,0 +1,11 @@
+
+.float{
+  cursor: crosshair;
+  transition-property: opacity
+  transition-duration: 10ms;
+}
+
+
+.float:hover{
+  opacity: 0;
+}
