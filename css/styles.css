@@ -1,0 +1,94 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: black;
+}
+
+a {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px auto;
+}
+
+.facebook_image_0{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  transition-property: clip-path;
+  transition-duration: 10ms;
+}
+
+.facebook_image_0{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  transition-property: clip-path;
+  transition-duration: 10ms;
+}
+
+.facebook_image_0:hover{
+  animation: facebook_image_transform 50ms infinite;
+}
+
+.facebook_image_1-6{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 100ms;
+  opacity: 0.0;
+  transition-timing-function: ease-out;
+  animation-delay: 0s 5s;
+
+}
+
+.facebook_image_1-6:hover{
+  opacity: 1.0;
+  animation: facebook_image_transform 50ms infinite;
+}
+
+
+
+
+@keyframes facebook_image_transform {
+  0%{
+    opacity:  0.75682706832886;
+  }
+  10%{
+    opacity: 0.33931216001511;
+  }
+  20%{
+  opacity: 0.95989722013474;
+  }
+  30%{
+  opacity: 0.18937538862228;
+  }
+  40%{
+    opacity: 0.10602145195007;
+  }
+  50%{
+    opacity: 0.84389908313751;
+  }
+  60%{
+    opacity: 0.90915765762329;
+  }
+  70%{
+    opacity: 0.80856258869171;
+  }
+  80%{
+    opacity: 0.29815226793289;
+  }
+  90%{
+    opacity: 0.79331390857697;
+  }
+  100%{
+    opacity: 1.0;
+  }
+}
