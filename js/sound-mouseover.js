@@ -12,7 +12,7 @@ if (document.all)
 
 else {
 {
-var audio = document.getElementById("sound_1"); audio.play();
+var audio = document.getElementById("facebook_sound_1"); audio.play();
 audio.play();
 }
 }
@@ -29,7 +29,7 @@ if (document.all)
 
 else {
 {
-var audio = document.getElementById("sound_2"); audio.play();
+var audio = document.getElementById("facebook_sound_2"); audio.play();
 audio.play();
 }
 }
@@ -46,7 +46,7 @@ if (document.all)
 
 else {
 {
-var audio = document.getElementById("sound_3"); audio.play();
+var audio = document.getElementById("facebook_sound_3"); audio.play();
 audio.play();
 }
 }
@@ -63,7 +63,7 @@ if (document.all)
 
 else {
 {
-var audio = document.getElementById("sound_4"); audio.play();
+var audio = document.getElementById("facebook_sound_4"); audio.play();
 audio.play();
 }
 }
@@ -80,7 +80,7 @@ if (document.all)
 
 else {
 {
-var audio = document.getElementById("sound_5"); audio.play();
+var audio = document.getElementById("facebook_sound_5"); audio.play();
 audio.play();
 }
 }
@@ -97,7 +97,7 @@ if (document.all)
 
 else {
 {
-var audio = document.getElementById("sound_6"); audio.play();
+var audio = document.getElementById("facebook_sound_6"); audio.play();
 audio.play();
 }
 }
@@ -114,7 +114,25 @@ if (document.all)
 
 else {
 {
-var audio = document.getElementById("sound_7"); audio.play();
+var audio = document.getElementById("facebook_sound_7"); audio.play();
+audio.play();
+}
+}
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+
+function playclip_google_9() {
+if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
+if (document.all)
+ {
+  document.all.sound.src = "click.mp3";
+ }
+}
+
+else {
+{
+var audio = document.getElementById("google_sound_9"); audio.play();
 audio.play();
 }
 }
