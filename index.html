@@ -7,22 +7,34 @@
     <meta name="author" content="Hunter Brown">
     <link rel = "stylesheet"  href = "css/styles.css" id="style">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sound-mouseover.js"></script>
   </head>
     <body>
-      <div>
-        <a href="facebook_blank.html">
-        <img class="facebook_image_0" src="images/facebook/facebook_0.jpg">
-        <img class="facebook_image_1-6" src="images/facebook/facebook_1.jpg">
-        <img class="facebook_image_1-6" src="images/facebook/facebook_2.jpg">
-        <img class="facebook_image_1-6" src="images/facebook/facebook_3.jpg">
-        <img class="facebook_image_1-6" src="images/facebook/facebook_4.jpg">
-        <img class="facebook_image_1-6" src="images/facebook/facebook_5.jpg">
-        <img class="facebook_image_1-6" src="images/facebook/facebook_6.jpg">
 
-          <audio loop="loop" autoplay="true" controls="controls">
-            <source src="audio/facebook_1.mp3"/>
-          </audio>
-      </a>
+      <div class="facebook_icon_layout">
+
+            <a href="facebook_blank.html" class="facebook_image_0" onmouseover="playclip_facebook_1();">
+              <img src="images/facebook/facebook_0.jpg">
+            </a>
+            <a onmouseover="playclip_facebook_2();">
+              <img class="facebook_image_1-6" src="images/facebook/facebook_1.jpg">
+            </a>
+            <a  onmouseover="playclip_facebook_3();">
+              <img class="facebook_image_1-6" src="images/facebook/facebook_2.jpg">
+            </a>
+            <a  onmouseover="playclip_facebook_4();">
+              <img class="facebook_image_1-6" src="images/facebook/facebook_3.jpg">
+            </a>
+            <a  onmouseover="playclip_facebook_5();">
+              <img class="facebook_image_1-6" src="images/facebook/facebook_4.jpg">
+            </a>
+            <a onmouseover="playclip_facebook_6();">
+              <img class="facebook_image_1-6" src="images/facebook/facebook_5.jpg">
+            </a>
+            <a class="facebook_image_0" onmouseover="playclip_facebook_7();">
+              <img class="facebook_image_1-6" src="images/facebook/facebook_6.jpg">
+            </a>
+
       </div>
 
         <img class="google_image" src="images/google/google_0.jpg">
@@ -31,6 +43,38 @@
         <img class="tiktok_image" src="images/tiktok/tiktok_0.jpg">
         <img class="twitter_image" src="images/twitter/twitter_0.jpg">
         <img class="youtube_image" src="images/youtube/youtube_0.jpg">
+
+
+          <!-- The Code Below was borrowed from: http://www.allwebco-templates.com/support/S_audio_onmouseover.html-->
+          <audio id="sound_1">
+            <source src="audio/facebook_1.mp3">
+          </audio>
+
+          <audio id="sound_2">
+            <source src="audio/facebook_2.mp3">
+          </audio>
+
+          <audio id="sound_3">
+            <source src="audio/facebook_3.mp3">
+          </audio>
+
+          <audio id="sound_4">
+            <source src="audio/facebook_4.mp3">
+          </audio>
+
+          <audio id="sound_5">
+            <source src="audio/facebook_5.mp3">
+          </audio>
+
+          <audio id="sound_6">
+            <source src="audio/facebook_6.mp3">
+          </audio>
+
+          <audio id="sound_7">
+            <source src="audio/facebook_7.mp3">
+          </audio>
+
+          <div id="sounddiv"><bgsound id="sound"></div>
 
     </body>
 </html>

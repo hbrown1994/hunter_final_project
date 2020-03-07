@@ -5,18 +5,21 @@ body{
   background-color: black;
 }
 
-a {
+
+.facebook_icon_layout {
   position: relative;
-  display: flex;
-  flex-direction: row;
+  display: inline;
+
   padding-top: 0px;
   padding-bottom: 0px;
-  margin: 0px auto;
+  padding-left: 0px;
+
+  transform: scale(0.7);
 }
 
 .facebook_image_0{
-  position: relative;
-  display: flex;
+  position: fixed;
+  display: run-in;
   flex-direction: row;
   cursor: crosshair;
   transition-property: clip-path;
@@ -25,9 +28,9 @@ a {
 
 .facebook_image_0{
   position: relative;
-  display: flex;
+  display: inline;
   flex-direction: row;
-  cursor: pointer;
+
   transition-property: clip-path;
   transition-duration: 10ms;
 }
@@ -38,14 +41,14 @@ a {
 
 .facebook_image_1-6{
   position: relative;
-  display: flex;
+  display: run-in;
   flex-direction: row;
-  cursor: pointer;
+
   transition-property: opacity;
   transition-duration: 100ms;
   opacity: 0.0;
-  transition-timing-function: ease-out;
-  animation-delay: 0s 5s;
+
+
 
 }
 
