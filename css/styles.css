@@ -9,30 +9,17 @@ body{
 .facebook_icon_layout {
   position: relative;
   display: inline;
-
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-
   transform: scale(0.7);
-}
-
-.facebook_image_0{
-  position: fixed;
-  display: run-in;
-  flex-direction: row;
-  cursor: crosshair;
-  transition-property: clip-path;
-  transition-duration: 10ms;
 }
 
 .facebook_image_0{
   position: relative;
   display: inline;
   flex-direction: row;
-
-  transition-property: clip-path;
-  transition-duration: 10ms;
+  cursor: crosshair;
 }
 
 .facebook_image_0:hover{
@@ -43,13 +30,7 @@ body{
   position: relative;
   display: run-in;
   flex-direction: row;
-
-  transition-property: opacity;
-  transition-duration: 100ms;
   opacity: 0.0;
-
-
-
 }
 
 .facebook_image_1-6:hover{
@@ -57,14 +38,86 @@ body{
   animation: facebook_image_transform 50ms infinite;
 }
 
-
-
 .google_image_0{
   cursor: crosshair;
 }
 
+.youtube_image_0{
+  cursor: crosshair;
+  position: relative;
+}
 
+.youtube_image_1{
+  cursor: crosshair;
+  opacity: 0.0;
+  position: relative;
+  top: -500px;
 
+}
+
+.youtube_image_2{
+  opacity: 0.0;
+  cursor: crosshair;
+  position: relative;
+  top: -900px;
+}
+
+.youtube_image_3{
+  opacity: 0.0;
+  cursor: crosshair;
+  position: relative;
+  top: -1300px;
+}
+
+.youtube_image_4{
+  opacity: 0.0;
+  cursor: crosshair;
+  position: relative;
+  top: -1700px;
+}
+
+.youtube_image_5{
+  opacity: 0.1;
+  cursor: crosshair;
+  position: relative;
+  top: -1800px;
+
+}
+
+.youtube_image_0:hover{
+  cursor: crosshair;
+  position: relative;
+
+}
+
+.youtube_image_1:hover{
+  cursor: crosshair;
+  position: relative;
+  animation: youtube_image_transform 25ms infinite;
+}
+
+.youtube_image_2:hover{
+  cursor: crosshair;
+  position: relative;
+  animation: youtube_image_transform 50ms infinite;
+}
+
+.youtube_image_3:hover{
+  cursor: crosshair;
+  position: relative;
+  animation: youtube_image_transform 100ms infinite;
+}
+
+.youtube_image_4:hover{
+  cursor: crosshair;
+  position: relative;
+  animation: youtube_image_transform 150ms infinite;
+}
+.youtube_image_5:hover{
+  cursor: crosshair;
+  position: relative;
+  animation: youtube_image_transform 2ms infinite;
+}
 
 @keyframes facebook_image_transform {
   0%{
@@ -96,6 +149,43 @@ body{
   }
   90%{
     opacity: 0.79331390857697;
+  }
+  100%{
+    opacity: 1.0;
+  }
+}
+
+
+@keyframes youtube_image_transform {
+  0%{
+    opacity:  0.0;
+  }
+  10%{
+    opacity: 0.1;
+  }
+  20%{
+  opacity: 0.2;
+  }
+  30%{
+  opacity: 0.3;
+  }
+  40%{
+    opacity: 0.4;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  60%{
+    opacity: 0.6;
+  }
+  70%{
+    opacity: 0.7;
+  }
+  80%{
+    opacity: 0.8;
+  }
+  90%{
+    opacity: 0.9;
   }
   100%{
     opacity: 1.0;
