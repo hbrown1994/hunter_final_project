@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Hunter's Final Project</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Hunter's Final Project">
+    <meta name="author" content="Hunter Brown">
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  </head>
+    <body>
+      <a-scene>
+          <!-- Init Camera Pos -->
+          <a-camera position="0 0 0"></a-camera>
+
+          <!-- List Assets (video and circle) -->
+          <a-assets>
+            <video id="video" autoplay loop="true" src="video/IMG_3568.mov"></video>
+          </a-assets>
+
+          <!-- Video on its side to form warped circular patterns -->
+          <a-videosphere src="#video"  rotation="90 0 0"></a-videosphere>
+        </a-scene>
+    </body>
+</html>

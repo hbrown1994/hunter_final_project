@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Hunter's Final Project</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Hunter's Final Project">
+    <meta name="author" content="Hunter Brown">
+    <link rel = "stylesheet"  href = "css/styles_facebook.css" id="style">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+  </head>
+    <body>
+        <a-scene>
+          <a-assets>
+            <!--List A-Frame Assests --------------------------------------------------------->
+            <audio id="audio_0" src="audio/twitter_0.mp3"></audio>
+            <audio id="audio_1" src="audio/twitter_1.mp3"></audio>
+            <audio id="audio_2" src="audio/twitter_2.mp3"></audio>
+            <audio id="audio_3" src="audio/twitter_3.mp3"></audio>
+            <audio id="audio_4" src="audio/twitter_4.mp3"></audio>
+            <audio id="audio_5" src="audio/twitter_5.mp3"></audio>
+            <audio id="audio_6" src="audio/twitter_6.mp3"></audio>
+
+              <img id="twitter_0" src="images/twitter/twitter_0.jpg">
+              <img id="twitter_1" src="images/twitter/twitter_1.jpg">
+              <img id="twitter_2" src="images/twitter/twitter_2.jpg">
+              <img id="twitter_3" src="images/twitter/twitter_3.jpg">
+              <img id="twitter_4" src="images/twitter/twitter_4.jpg">
+              <img id="twitter_5" src="images/twitter/twitter_5.jpg">
+              <img id="twitter_6" src="images/twitter/twitter_spec.png">
+          </a-assets>
+
+
+          <!--Photo that replaces page background and current audio on hover --------------------------------------------------------->
+          <a-entity id="sel1" class = "select"
+            geometry="primitive: plane; height: 3; width: 3"
+            material="src: #twitter_1;"
+            event-set__1="_event: mouseenter; material.color: white;"
+            event-set__2="_event: mouseleave; material.color: grey;"
+            event-set__3="_event: mouseenter; _target: #sky; src: #twitter_1"
+            event-set__4="_event: mouseenter; _target: #playback; src: #audio_1"
+            position="-4 3.5 -1"
+            rotation="0 45 0">
+          </a-entity>
+
+          <!------------------------------------------------------------------------------------------>
+          <a-entity id="sel2" class = "select"
+            geometry="primitive: plane; height: 3; width: 3"
+            material="src: #twitter_2;"
+            event-set__1="_event: mouseenter; material.color: white;"
+            event-set__2="_event: mouseleave; material.color: grey;"
+            event-set__3="_event: mouseenter; _target: #sky; src: #twitter_2"
+            event-set__4="_event: mouseenter; _target: #playback; src: #audio_2"
+            position="-4 3.5 -1"
+            rotation="90 90 0">
+          </a-entity>
+
+          <!------------------------------------------------------------------------------------------>
+          <a-entity id="sel3" class = "select"
+            geometry="primitive: plane; height: 3; width: 3"
+            material="src: #twitter_3;"
+            event-set__1="_event: mouseenter; material.color: white;"
+            event-set__2="_event: mouseleave; material.color: grey;"
+            event-set__3="_event: mouseenter; _target: #sky; src: #twitter_3"
+            event-set__4="_event: mouseenter; _target: #playback; src: #audio_3"
+            position="4 6.5 -1"
+            rotation="90 90 0">
+          </a-entity>
+
+          <!------------------------------------------------------------------------------------------>
+          <a-entity id="sel4" class = "select"
+            geometry="primitive: plane; height: 3; width: 3"
+            material="src: #twitter_4;"
+            event-set__1="_event: mouseenter; material.color: white;"
+            event-set__2="_event: mouseleave; material.color: grey;"
+            event-set__3="_event: mouseenter; _target: #sky; src: #twitter_4"
+            event-set__4="_event: mouseenter; _target: #playback; src: #audio_4"
+            position="3 0.5 -1"
+            rotation="90 90 0">
+          </a-entity>
+
+          <!------------------------------------------------------------------------------------------>
+          <a-entity id="sel5" class = "select"
+            geometry="primitive: plane; height: 3; width: 3"
+            material="src: #twitter_5;"
+            event-set__1="_event: mouseenter; material.color: white;"
+            event-set__2="_event: mouseleave; material.color: grey;"
+            event-set__3="_event: mouseenter; _target: #sky; src: #twitter_5"
+            event-set__4="_event: mouseenter; _target: #playback; src: #audio_5"
+            osition="-2 1.5 -1"
+            rotation="90 90 0">
+          </a-entity>
+
+          <a-entity id="sel6" class = "select"
+            geometry="primitive: plane; height: 30; width: 3"
+            material="src: #twitter_6;"
+            event-set__1="_event: mouseenter; material.color: white;"
+            event-set__2="_event: mouseleave; material.color: grey;"
+            event-set__3="_event: mouseenter; _target: #sky; src: #twitter_6"
+            event-set__4="_event: mouseenter; _target: #playback; src: #audio_6"
+            position="-9 2.5 2"
+            rotation="0 45 0">
+          </a-entity>
+
+          <!--Camera POV circle --------------------------------------------------------->
+          <a-entity camera look-controls position="0 1.75 0">
+            <a-cursor
+              raycaster="objects: .select"></a-cursor>
+            </a-entity>
+
+          <!--Sound Definition --------------------------------------------------------->
+          <a-sound id= "playback" src="#audio_0" autoplay="true" loop="true"></a-sound>
+
+          <!--Background --------------------------------------------------------->
+          <a-sky id="sky" src="images/twitter/twitter_blank.JPG" rotation="0 -130 0"></a-sky>
+        </a-scene>
+    </body>
+</html>

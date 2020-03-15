@@ -12,6 +12,8 @@
   </head>
     <body>
         <a-scene>
+
+          <!--List A-Frame Assests --------------------------------------------------------->
           <a-assets>
               <audio id="audio" src="audio/facebook_8.mp3"></audio>
               <audio id="audio_1" src="audio/facebook_9.mp3"></audio>
@@ -20,6 +22,7 @@
               <img id="facebook_2" src="images/facebook/facebook_glitch_1.jpg">
           </a-assets>
 
+          <!--Photo that replaces page background and current audio on hover --------------------------------------------------------->
           <a-entity id="sel1" class = "select"
             geometry="primitive: plane; height: 3; width: 3"
             material="src: #facebook_0;"
@@ -30,11 +33,17 @@
             position="-4 3.5 -1"
             rotation="0 45 0">
           </a-entity>
+
+          <!--Camera POV circle --------------------------------------------------------->
           <a-entity camera look-controls position="0 1.75 0">
             <a-cursor
               raycaster="objects: .select"></a-cursor>
             </a-entity>
+
+          <!--Sound Definition --------------------------------------------------------->
           <a-sound id= "playback" src="#audio" autoplay="true" loop="true"></a-sound>
+
+          <!--Background --------------------------------------------------------->
           <a-sky id="bg" src="images/facebook/facebook_blank.png" rotation="0 -130 0"></a-sky>
         </a-scene>
     </body>

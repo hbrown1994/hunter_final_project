@@ -1,3 +1,4 @@
+/*------------------ Whole Document ------------------*/
 body{
   padding: 0px;
   margin: 0px;
@@ -5,7 +6,7 @@ body{
   background-color: black;
 }
 
-
+/*------------------ Facebook Div ------------------*/
 .facebook_icon_layout {
   position: relative;
   display: inline;
@@ -15,6 +16,7 @@ body{
   transform: scale(0.7);
 }
 
+/*------------------ Facebook Images ------------------*/
 .facebook_image_0{
   position: relative;
   display: inline;
@@ -38,10 +40,12 @@ body{
   animation: facebook_image_transform 50ms infinite;
 }
 
+/*------------------ Google Images ------------------*/
 .google_image_0{
   cursor: crosshair;
 }
 
+/*------------------ Youtube Images ------------------*/
 .youtube_image_0{
   cursor: crosshair;
   position: relative;
@@ -52,7 +56,12 @@ body{
   opacity: 0.0;
   position: relative;
   top: -500px;
+}
 
+.youtube_image_1:hover{
+  cursor: crosshair;
+  position: relative;
+  animation: youtube_image_transform 25ms infinite;
 }
 
 .youtube_image_2{
@@ -62,6 +71,12 @@ body{
   top: -900px;
 }
 
+.youtube_image_2:hover{
+  cursor: crosshair;
+  position: relative;
+  animation: youtube_image_transform 50ms infinite;
+}
+
 .youtube_image_3{
   opacity: 0.0;
   cursor: crosshair;
@@ -69,11 +84,23 @@ body{
   top: -1300px;
 }
 
+.youtube_image_3:hover{
+  cursor: crosshair;
+  position: relative;
+  animation: youtube_image_transform 100ms infinite;
+}
+
 .youtube_image_4{
   opacity: 0.0;
   cursor: crosshair;
   position: relative;
   top: -1700px;
+}
+
+.youtube_image_4:hover{
+  cursor: crosshair;
+  position: relative;
+  animation: youtube_image_transform 150ms infinite;
 }
 
 .youtube_image_5{
@@ -84,41 +111,32 @@ body{
 
 }
 
-.youtube_image_0:hover{
-  cursor: crosshair;
-  position: relative;
-
-}
-
-.youtube_image_1:hover{
-  cursor: crosshair;
-  position: relative;
-  animation: youtube_image_transform 25ms infinite;
-}
-
-.youtube_image_2:hover{
-  cursor: crosshair;
-  position: relative;
-  animation: youtube_image_transform 50ms infinite;
-}
-
-.youtube_image_3:hover{
-  cursor: crosshair;
-  position: relative;
-  animation: youtube_image_transform 100ms infinite;
-}
-
-.youtube_image_4:hover{
-  cursor: crosshair;
-  position: relative;
-  animation: youtube_image_transform 150ms infinite;
-}
 .youtube_image_5:hover{
   cursor: crosshair;
   position: relative;
   animation: youtube_image_transform 2ms infinite;
 }
 
+/*------------------ Twitter Images ------------------*/
+.twitter_image_0{
+  position: relative;
+  display: inline;
+  flex-direction: row;
+  cursor: crosshair;
+  opacity:  1.0;
+}
+
+.twitter_image_0:hover{
+  animation: youtube_image_transform 1ms infinite;
+}
+
+
+/*------------------ Instgram Images ------------------*/
+.instagram_image{
+  cursor: crosshair;
+}
+
+/*------------------ KeyFrame Animations ------------------*/
 @keyframes facebook_image_transform {
   0%{
     opacity:  0.75682706832886;
@@ -154,7 +172,6 @@ body{
     opacity: 1.0;
   }
 }
-
 
 @keyframes youtube_image_transform {
   0%{
